@@ -36,7 +36,7 @@ For detailed instructions, please refer to the [documentation](https://www.serve
 
 ### Generate a certificate
 
-This function has a single responsibility to generate certificates. 
+This function has a single responsibility to verify certificates. 
 
 You can be call this service by  HTTP request  made on the provisioned API Gateway REST API `/generateCertificate` route with `POST` method. 
 The request body must be provided as `application/json` with the following format:
@@ -73,7 +73,7 @@ If valid, this service returns with `200` HTTP status code and body containing t
     "grade": 10,
     "created_at": "2023-01-15T19:28:55.865Z",
     "certificate_status": "Válido",
-    "url": "https://ignite-node-certificates.s3.amazonaws.com/df446858-921c-11ed-a1eb-0242ac120002.pdf"
+    "url": "https://{your_bucket_name}.s3.amazonaws.com/{id_of_user}.pdf"
 }
 ```
 
