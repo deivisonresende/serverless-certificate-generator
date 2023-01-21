@@ -36,7 +36,7 @@ For detailed instructions, please refer to the [documentation](https://www.serve
 
 ### Generate a certificate
 
-This function has a single responsibility to verify certificates. 
+This function has a single responsibility to generate certificates. 
 
 You can be call this service by  HTTP request  made on the provisioned API Gateway REST API `/generateCertificate` route with `POST` method. 
 The request body must be provided as `application/json` with the following format:
@@ -61,7 +61,7 @@ Running locally, this service will generate a certificate.pdf file at the root o
 
 ### Verify a certificate
 
-This function has a single responsibility to validate certificates. 
+This function has a single responsibility to verify certificates. 
 
 You can be call this service by  HTTP request  made on the provisioned API Gateway REST API `/generateCertificate/{id}` route with `GET` method.
 
