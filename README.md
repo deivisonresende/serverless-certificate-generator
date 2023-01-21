@@ -63,7 +63,7 @@ Running locally, this service will generate a certificate.pdf file at the root o
 
 This function has a single responsibility to verify certificates. 
 
-You can be call this service by  HTTP request  made on the provisioned API Gateway REST API `/generateCertificate/{id}` route with `GET` method.
+You can be call this service by  HTTP request  made on the provisioned API Gateway REST API `/verifyCertificate/{id}` route with `GET` method.
 
 If valid, this service returns with `200` HTTP status code and body containing the certificate data and certificate_status key as 'Válido'. See an sample:
 
