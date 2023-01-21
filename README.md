@@ -25,7 +25,7 @@ For detailed instructions, please refer to the [documentation](https://www.serve
 - Run `npm run dynamodb:start` to start the local dynamodb server.
 - Run `npm run dev` to make functions listen to _http_ triggers.
 - Go to [AWS IAM management console](https://aws.amazon.com/pt/iam/) and create an user with **AdministratorAccess** role.
-- Copy the **access key id** and **access key** and run `serverless config credentials --provider aws --key={your_access_key_id} --secret={your_secret_key} -o`
+- Copy the **access key id** and **access key** and run `serverless config credentials --provider aws --key={your_access_key_id} --secret={your_access_key} -o`
 - Run `npm run deploy` to deploy this stack to AWS
 
 </br>
